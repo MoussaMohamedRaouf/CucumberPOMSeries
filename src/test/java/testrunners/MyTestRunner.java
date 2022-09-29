@@ -6,8 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features ={"src/test/resources/com/features"},
-        glue = {"stepdefinitions"},
+        features ={"src/test/resources/AppFeatures"},
+        glue = {"stepsdefinition","AppHooks"},
         plugin = {"pretty",
                 "json:target/Reports/report.json",
                 "junit:target/Reports/report.xml"
