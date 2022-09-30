@@ -9,7 +9,7 @@ Feature: Login page feature
     Scenario: Forgot password Link
     Given user is on login page
     Then forget password link should be displayed
-    @Regression @Skip
+    @Regression
     Scenario: Login with correct credentials
       Given user is on login page
       When user enters username "moussaraouf@outlook.fr"

@@ -10,9 +10,9 @@ import org.junit.runner.RunWith;
         glue = {"stepsdefinition","AppHooks"},
         plugin = {
                 "pretty",
-                "rerun:target/failedrerun.txt"
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+                "timeline:test-output-thread/"
         }
-        //tags = "not @Skip"
 )
 public class MyTestCase {
 }
