@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class DriverFactory {
     public WebDriver driver;
@@ -21,8 +22,11 @@ public class DriverFactory {
             WebDriverManager.chromedriver().setup();
             tlDriver.set(new ChromeDriver());
         }else if(browser.equals("firefox")){
-            WebDriverManager.chromedriver().setup();
+            WebDriverManager.firefoxdriver().setup();
             tlDriver.set(new FirefoxDriver());
+        }else if(browser.equals("safari")){
+            WebDriverManager.safaridriver().setup();
+            tlDriver.set(new SafariDriver());
         }else {
             System.out.println("Please pass the correct browser value:" +browser);
         }

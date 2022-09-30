@@ -34,4 +34,11 @@ public class LoginPage {
         driver.findElement(submitButtonID).click();
     }
 
+    public AccountPage login(String userName, String password){
+        System.out.println("Loging in with email: "+userName+" and password:"+password);
+        driver.findElement(emailID).sendKeys(userName);
+        driver.findElement(passwordID).sendKeys(password);
+        driver.findElement(submitButtonID).click();
+        return new AccountPage(driver);
+    }
 }
