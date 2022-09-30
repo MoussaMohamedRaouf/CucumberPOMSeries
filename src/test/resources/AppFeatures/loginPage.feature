@@ -1,12 +1,15 @@
+@Login
 Feature: Login page feature
-  Scenario: Login page title
+    @Smoke
+    Scenario: Login page title
     Given user is on login page
     When user gets the title of the page
     Then page title should be "Login - My Store"
-  Scenario: Forgot password Link
+    @Smoke
+    Scenario: Forgot password Link
     Given user is on login page
     Then forget password link should be displayed
-
+    @Regression @Skip
     Scenario: Login with correct credentials
       Given user is on login page
       When user enters username "moussaraouf@outlook.fr"
