@@ -10,7 +10,8 @@ import org.junit.runner.RunWith;
         glue = {"stepsdefinition","AppHooks"},
         plugin = {
                 "pretty",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+                "timeline:test-output-thread/"
         }
 )
 public class MyTestCase {

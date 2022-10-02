@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">sept. 30, 2022 08:50:01 PM</span></a>
+<a href="#"><span class="badge badge-primary">oct. 2, 2022 03:18:22 PM</span></a>
 </li>
 </ul>
 </div>
@@ -57,6 +57,11 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -66,25 +71,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>sept. 30, 2022 08:50:01 PM</h3>
+<h3>oct. 2, 2022 03:18:22 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>sept. 30, 2022 08:50:55 PM</h3>
+<h3>oct. 2, 2022 03:19:25 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>3</h3>
+<h3>2</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -100,12 +105,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>3</b> features passed
+<div><small data-tooltip='66%'>
+<b>2</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='33%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -123,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>9</b> scenarios passed</small></div>
+<div><small data-tooltip='88%'><b>8</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='11%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -143,9 +148,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>35</b> steps passed</small></div>
+<div><small data-tooltip='97%'><b>35</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
+<small data-tooltip='2%'><b>1</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -162,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Account Page Feature":29.067,"Contact Us feature":9.921,"Login page feature":14.34
+"Account Page Feature":28.827,"Contact Us feature":13.975,"Login page feature":18.95
 };
 </script>
 <div class="row">
@@ -172,16 +177,16 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@Regression</td>
-<td>1</td>
+<td>@Smoke</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
 </tr>
 <tr>
-<td>@accounts</td>
-<td>4</td>
+<td>@Regression</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -196,12 +201,12 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@Smoke</td>
-<td>2</td>
+<td>@accounts</td>
+<td>3</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>75%</td>
 </tr>
 </tbody>
 </table></div>
@@ -214,16 +219,16 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
 <tbody>
 <tr>
-<td>AppName</td>
-<td>AutomatisationCucumber</td>
+<td>build</td>
+<td>1.1</td>
 </tr>
 <tr>
 <td>user</td>
 <td>Moussa</td>
 </tr>
 <tr>
-<td>build</td>
-<td>1.1</td>
+<td>AppName</td>
+<td>AutomatisationCucumber</td>
 </tr>
 <tr>
 <td>os</td>
@@ -238,19 +243,19 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 3,
-failParent: 0,
+passParent: 2,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 9,
-failChild: 0,
+passChild: 8,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
 passGrandChild: 35,
-failGrandChild: 0,
+failGrandChild: 1,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
@@ -267,6 +272,7 @@ eventsCount: 5,
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -274,31 +280,31 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Regression</a><a class="dropdown-item" href="#">@accounts</a><a class="dropdown-item" href="#">@Login</a><a class="dropdown-item" href="#">@Smoke</a>
+<a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@Regression</a><a class="dropdown-item" href="#">@Login</a><a class="dropdown-item" href="#">@accounts</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Account Page Feature</p>
             <p class="text-sm">
-              <span>8:50:01 PM</span> / <span>00:00:29:067</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>15:18:23</span> / <span>00:00:28:827</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Account Page Feature</h5>
-<span class='badge badge-success'>09.30.2022 8:50:01 PM</span>
-<span class='badge badge-danger'>09.30.2022 8:50:30 PM</span>
-<span class='badge badge-default'>00:00:29:067</span>
+<h5 class="test-status text-fail">Account Page Feature</h5>
+<span class='badge badge-success'>10.02.2022 15:18:23</span>
+<span class='badge badge-danger'>10.02.2022 15:18:52</span>
+<span class='badge badge-default'>00:00:28:827</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -378,10 +384,13 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Accounts page title.</div>
+        <div class="node" id="20"><span class="badge log fail-bg mr-2">Fail</span>Accounts page title.</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="stepsdefinition.AccountPageSD.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
                 <span>Given user has already logged in to application</span>
@@ -400,8 +409,27 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepsdefinition.LoginSD.page_title_should_be(java.lang.String)">
+              <div class="step fail-bg" title="stepsdefinition.LoginSD.page_title_should_be(java.lang.String)">
                 <span>Then page title should be "My account - My Store"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepsdefinition.LoginSD.page_title_should_be(LoginSD.java:24)
+	at ✽.page title should be "My account - My Store"(file:///Users/moussa/.jenkins/workspace/MavenTests/CucumberPOMSeries/src/test/resources/AppFeatures/accountPage.feature:10)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>_A_c_c_o_u_n_t_s_ _p_a_g_e_ _t_i_t_l_e_._
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
       <div>
       </div>
               </div>
@@ -453,7 +481,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Contact Us feature</p>
             <p class="text-sm">
-              <span>8:50:30 PM</span> / <span>00:00:09:921</span>
+              <span>15:18:52</span> / <span>00:00:13:975</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -462,9 +490,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Contact Us feature</h5>
-<span class='badge badge-success'>09.30.2022 8:50:30 PM</span>
-<span class='badge badge-danger'>09.30.2022 8:50:40 PM</span>
-<span class='badge badge-default'>00:00:09:921</span>
+<span class='badge badge-success'>10.02.2022 15:18:52</span>
+<span class='badge badge-danger'>10.02.2022 15:19:06</span>
+<span class='badge badge-default'>00:00:13:975</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -550,7 +578,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Login page feature</p>
             <p class="text-sm">
-              <span>8:50:40 PM</span> / <span>00:00:14:340</span>
+              <span>15:19:06</span> / <span>00:00:18:950</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -559,9 +587,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Login page feature</h5>
-<span class='badge badge-success'>09.30.2022 8:50:40 PM</span>
-<span class='badge badge-danger'>09.30.2022 8:50:55 PM</span>
-<span class='badge badge-default'>00:00:14:340</span>
+<span class='badge badge-success'>10.02.2022 15:19:06</span>
+<span class='badge badge-danger'>10.02.2022 15:19:25</span>
+<span class='badge badge-default'>00:00:18:950</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -681,6 +709,52 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Smoke</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Smoke</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:19:06 PM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='59'>Login page title</a>
+<div class="">
+<span class="badge badge-default">Login page feature.Login page title</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:19:10 PM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='67'>Forgot password Link</a>
+<div class="">
+<span class="badge badge-default">Login page feature.Forgot password Link</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
 <p class="name">@Regression</p>
@@ -702,77 +776,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:50:49 PM</td>
+<td>15:19:15 PM</td>
 <td>
 <a href="#" class="linked" test-id='58' id='74'>Login with correct credentials</a>
 <div class="">
 <span class="badge badge-default">Login page feature.Login with correct credentials</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>4</span>
-</span>
-<p class="name">@accounts</p>
-<p class="duration text-sm">4 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@accounts</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:50:01 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Accounts page title.</a>
-<div class="">
-<span class="badge badge-default">Account Page Feature.Accounts page title.</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:50:10 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='11'>Accounts section count</a>
-<div class="">
-<span class="badge badge-default">Account Page Feature.Accounts section count</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:50:17 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='20'>Accounts page title.</a>
-<div class="">
-<span class="badge badge-default">Account Page Feature.Accounts page title.</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>20:50:24 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='29'>Accounts section count</a>
-<div class="">
-<span class="badge badge-default">Account Page Feature.Accounts section count</span>
 </div>
 </td>
 </tr>
@@ -804,7 +812,7 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:50:40 PM</td>
+<td>15:19:06 PM</td>
 <td>
 <a href="#" class="linked" test-id='58' id='59'>Login page title</a>
 <div class="">
@@ -814,7 +822,7 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:50:45 PM</td>
+<td>15:19:10 PM</td>
 <td>
 <a href="#" class="linked" test-id='58' id='67'>Forgot password Link</a>
 <div class="">
@@ -824,7 +832,7 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:50:49 PM</td>
+<td>15:19:15 PM</td>
 <td>
 <a href="#" class="linked" test-id='58' id='74'>Login with correct credentials</a>
 <div class="">
@@ -839,15 +847,17 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>2</span>
+<span class='badge log pass-bg'>3</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@Smoke</p>
-<p class="duration text-sm">2 tests</p>
+<p class="name">@accounts</p>
+<p class="duration text-sm">4 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Smoke</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
+<h4>@accounts</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -860,21 +870,93 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:50:40 PM</td>
+<td>15:18:23 PM</td>
 <td>
-<a href="#" class="linked" test-id='58' id='59'>Login page title</a>
+<a href="#" class="linked" test-id='1' id='2'>Accounts page title.</a>
 <div class="">
-<span class="badge badge-default">Login page feature.Login page title</span>
+<span class="badge badge-default">Account Page Feature.Accounts page title.</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:50:45 PM</td>
+<td>15:18:32 PM</td>
 <td>
-<a href="#" class="linked" test-id='58' id='67'>Forgot password Link</a>
+<a href="#" class="linked" test-id='1' id='11'>Accounts section count</a>
 <div class="">
-<span class="badge badge-default">Login page feature.Forgot password Link</span>
+<span class="badge badge-default">Account Page Feature.Accounts section count</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:18:39 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>Accounts page title.</a>
+<div class="">
+<span class="badge badge-default">Account Page Feature.Accounts page title.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='29'>Accounts section count</a>
+<div class="">
+<span class="badge badge-default">Account Page Feature.Accounts section count</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:18:44 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='26'>Then page title should be "My account - My Store"</a>
+<div class="">
+<span class="badge badge-default">Account Page Feature.Accounts page title..Then page title should be "My account - My Store"</span>
 </div>
 </td>
 </tr>
