@@ -8,7 +8,7 @@ Cucumber BDD project
 
 *   [x] **AccountPage** User logged we need to verify some web elements on account page
 *   [x] **ContactUs** Filling contact us form 
-*   [ ] **LoginPage** Login to application
+*   [x] **LoginPage** Login to application
 
 ## Project Structure
 .

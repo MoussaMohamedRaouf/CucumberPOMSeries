@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">oct. 2, 2022 03:18:22 PM</span></a>
+<a href="#"><span class="badge badge-primary">oct. 3, 2022 03:49:46 PM</span></a>
 </li>
 </ul>
 </div>
@@ -71,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>oct. 2, 2022 03:18:22 PM</h3>
+<h3>oct. 3, 2022 03:49:46 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>oct. 2, 2022 03:19:25 PM</h3>
+<h3>oct. 3, 2022 03:50:58 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -148,10 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='97%'><b>35</b> steps passed</small></div>
+<div><small data-tooltip='86%'><b>31</b> steps passed</small></div>
 <div>
-<small data-tooltip='2%'><b>1</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='5%'><b>2</b> steps failed,
+<b>3</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Account Page Feature":28.827,"Contact Us feature":13.975,"Login page feature":18.95
+"Account Page Feature":29.643,"Contact Us feature":25.18,"Login page feature":16.155
 };
 </script>
 <div class="row">
@@ -185,12 +185,12 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@Regression</td>
+<td>@accounts</td>
+<td>3</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>75%</td>
 </tr>
 <tr>
 <td>@Login</td>
@@ -201,12 +201,12 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@accounts</td>
-<td>3</td>
+<td>@Regression</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>75%</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -219,16 +219,16 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
 <tbody>
 <tr>
-<td>build</td>
-<td>1.1</td>
+<td>AppName</td>
+<td>AutomatisationCucumber</td>
 </tr>
 <tr>
 <td>user</td>
 <td>Moussa</td>
 </tr>
 <tr>
-<td>AppName</td>
-<td>AutomatisationCucumber</td>
+<td>build</td>
+<td>1.1</td>
 </tr>
 <tr>
 <td>os</td>
@@ -254,10 +254,10 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 35,
-failGrandChild: 1,
+passGrandChild: 31,
+failGrandChild: 2,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 3,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -280,7 +280,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@Regression</a><a class="dropdown-item" href="#">@Login</a><a class="dropdown-item" href="#">@accounts</a>
+<a class="dropdown-item" href="#">@Smoke</a><a class="dropdown-item" href="#">@accounts</a><a class="dropdown-item" href="#">@Login</a><a class="dropdown-item" href="#">@Regression</a>
 </ul>
 </li>
 </ul>
@@ -293,7 +293,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Account Page Feature</p>
             <p class="text-sm">
-              <span>15:18:23</span> / <span>00:00:28:827</span>
+              <span>3:49:47 PM</span> / <span>00:00:29:643</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -302,9 +302,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Account Page Feature</h5>
-<span class='badge badge-success'>10.02.2022 15:18:23</span>
-<span class='badge badge-danger'>10.02.2022 15:18:52</span>
-<span class='badge badge-default'>00:00:28:827</span>
+<span class='badge badge-success'>10.03.2022 3:49:47 PM</span>
+<span class='badge badge-danger'>10.03.2022 3:50:17 PM</span>
+<span class='badge badge-default'>00:00:29:643</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -316,31 +316,85 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Accounts page title.</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Accounts page title.</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepsdefinition.AccountPageSD.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
+              <div class="step fail-bg" title="stepsdefinition.AccountPageSD.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
                 <span>Given user has already logged in to application</span>
       <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>moussaraouf@outlook.fr</td><td>Selenium12345</td></tr></table>
       </div>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=105.0.5195.125)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'MacBook-Pro-de-Moussa.local', ip: '2a01:e0a:2f3:e830:80cf:617b:dfe9:6e37%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [deba2d85a25b8e933bb35a8902c8de91, get {url=http://automationpractice.com/index.php?controller=authentication&back=my-account}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/hw/b1k6v6dn27v...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: deba2d85a25b8e933bb35a8902c8de91
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:310)
+	at stepsdefinition.AccountPageSD.user_has_already_logged_in_to_application(AccountPageSD.java:24)
+	at ✽.user has already logged in to application(file:///Users/moussa/Downloads/CucumberPOMSeries/src/test/resources/AppFeatures/acc.feature:3)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="stepsdefinition.AccountPageSD.user_is_on_accounts_page()">
+              <div class="step skip-bg" title="stepsdefinition.AccountPageSD.user_is_on_accounts_page()">
                 <span>Given user is on Accounts page</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepsdefinition.LoginSD.user_gets_the_title_of_the_page()">
+              <div class="step skip-bg" title="stepsdefinition.LoginSD.user_gets_the_title_of_the_page()">
                 <span>When user gets the title of the page</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepsdefinition.LoginSD.page_title_should_be(java.lang.String)">
+              <div class="step skip-bg" title="stepsdefinition.LoginSD.page_title_should_be(java.lang.String)">
                 <span>Then page title should be "My account - My Store"</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+  (Session info: chrome=105.0.5195.125)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'MacBook-Pro-de-Moussa.local', ip: '2a01:e0a:2f3:e830:80cf:617b:dfe9:6e37%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [deba2d85a25b8e933bb35a8902c8de91, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.125, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/hw/b1k6v6dn27v...}, goog:chromeOptions: {debuggerAddress: localhost:60851}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:60851/devtoo..., se:cdpVersion: 105.0.5195.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: deba2d85a25b8e933bb35a8902c8de91
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:331)
+	at AppHooks.ApplicationHooks.tearDown(ApplicationHooks.java:47)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -384,13 +438,10 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="20"><span class="badge log fail-bg mr-2">Fail</span>Accounts page title.</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Accounts page title.</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
               <div class="step pass-bg" title="stepsdefinition.AccountPageSD.user_has_already_logged_in_to_application(io.cucumber.datatable.DataTable)">
                 <span>Given user has already logged in to application</span>
@@ -409,27 +460,8 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step fail-bg" title="stepsdefinition.LoginSD.page_title_should_be(java.lang.String)">
+              <div class="step pass-bg" title="stepsdefinition.LoginSD.page_title_should_be(java.lang.String)">
                 <span>Then page title should be "My account - My Store"</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepsdefinition.LoginSD.page_title_should_be(LoginSD.java:24)
-	at ✽.page title should be "My account - My Store"(file:///Users/moussa/.jenkins/workspace/MavenTests/CucumberPOMSeries/src/test/resources/AppFeatures/accountPage.feature:10)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step pass-bg" title="AFTER">
-                <span>AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>_A_c_c_o_u_n_t_s_ _p_a_g_e_ _t_i_t_l_e_._
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../embedded1.png' src="../embedded1.png">
-    
-    </div></div>
-</div>
       <div>
       </div>
               </div>
@@ -481,7 +513,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Contact Us feature</p>
             <p class="text-sm">
-              <span>15:18:52</span> / <span>00:00:13:975</span>
+              <span>3:50:17 PM</span> / <span>00:00:25:180</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -490,9 +522,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Contact Us feature</h5>
-<span class='badge badge-success'>10.02.2022 15:18:52</span>
-<span class='badge badge-danger'>10.02.2022 15:19:06</span>
-<span class='badge badge-default'>00:00:13:975</span>
+<span class='badge badge-success'>10.03.2022 3:50:17 PM</span>
+<span class='badge badge-danger'>10.03.2022 3:50:42 PM</span>
+<span class='badge badge-default'>00:00:25:180</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=38</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -578,7 +610,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Login page feature</p>
             <p class="text-sm">
-              <span>15:19:06</span> / <span>00:00:18:950</span>
+              <span>3:50:42 PM</span> / <span>00:00:16:155</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -587,9 +619,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Login page feature</h5>
-<span class='badge badge-success'>10.02.2022 15:19:06</span>
-<span class='badge badge-danger'>10.02.2022 15:19:25</span>
-<span class='badge badge-default'>00:00:18:950</span>
+<span class='badge badge-success'>10.03.2022 3:50:42 PM</span>
+<span class='badge badge-danger'>10.03.2022 3:50:58 PM</span>
+<span class='badge badge-default'>00:00:16:155</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -730,7 +762,7 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:19:06 PM</td>
+<td>15:50:42 PM</td>
 <td>
 <a href="#" class="linked" test-id='58' id='59'>Login page title</a>
 <div class="">
@@ -740,103 +772,11 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:19:10 PM</td>
+<td>15:50:45 PM</td>
 <td>
 <a href="#" class="linked" test-id='58' id='67'>Forgot password Link</a>
 <div class="">
 <span class="badge badge-default">Login page feature.Forgot password Link</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@Regression</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Regression</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:19:15 PM</td>
-<td>
-<a href="#" class="linked" test-id='58' id='74'>Login with correct credentials</a>
-<div class="">
-<span class="badge badge-default">Login page feature.Login with correct credentials</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>3</span>
-</span>
-<p class="name">@Login</p>
-<p class="duration text-sm">3 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Login</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:19:06 PM</td>
-<td>
-<a href="#" class="linked" test-id='58' id='59'>Login page title</a>
-<div class="">
-<span class="badge badge-default">Login page feature.Login page title</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:19:10 PM</td>
-<td>
-<a href="#" class="linked" test-id='58' id='67'>Forgot password Link</a>
-<div class="">
-<span class="badge badge-default">Login page feature.Forgot password Link</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:19:15 PM</td>
-<td>
-<a href="#" class="linked" test-id='58' id='74'>Login with correct credentials</a>
-<div class="">
-<span class="badge badge-default">Login page feature.Login with correct credentials</span>
 </div>
 </td>
 </tr>
@@ -868,9 +808,9 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:18:23 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:49:47 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Accounts page title.</a>
 <div class="">
@@ -880,7 +820,7 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:18:32 PM</td>
+<td>15:49:51 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='11'>Accounts section count</a>
 <div class="">
@@ -888,9 +828,9 @@ eventsCount: 5,
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>15:18:39 PM</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:49:57 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='20'>Accounts page title.</a>
 <div class="">
@@ -900,11 +840,103 @@ eventsCount: 5,
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:18:45 PM</td>
+<td>15:50:04 PM</td>
 <td>
 <a href="#" class="linked" test-id='1' id='29'>Accounts section count</a>
 <div class="">
 <span class="badge badge-default">Account Page Feature.Accounts section count</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@Login</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Login</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:50:42 PM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='59'>Login page title</a>
+<div class="">
+<span class="badge badge-default">Login page feature.Login page title</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:50:45 PM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='67'>Forgot password Link</a>
+<div class="">
+<span class="badge badge-default">Login page feature.Forgot password Link</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:50:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='74'>Login with correct credentials</a>
+<div class="">
+<span class="badge badge-default">Login page feature.Login with correct credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@Regression</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Regression</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:50:49 PM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='74'>Login with correct credentials</a>
+<div class="">
+<span class="badge badge-default">Login page feature.Login with correct credentials</span>
 </div>
 </td>
 </tr>
@@ -924,7 +956,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -933,12 +965,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.AssertionError</p>
+<p class="name">org.openqa.selenium.WebDriverException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.AssertionError</h4>
+<h4>org.openqa.selenium.WebDriverException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -952,11 +984,47 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>15:18:44 PM</td>
+<td>15:49:50 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='26'>Then page title should be "My account - My Store"</a>
+<a href="#" class="linked" test-id='1' id='5'>Given user has already logged in to application</a>
 <div class="">
-<span class="badge badge-default">Account Page Feature.Accounts page title..Then page title should be "My account - My Store"</span>
+<span class="badge badge-default">Account Page Feature.Accounts page title..Given user has already logged in to application</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchWindowException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchWindowException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:49:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Account Page Feature.Accounts page title..AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
 </div>
 </td>
 </tr>
