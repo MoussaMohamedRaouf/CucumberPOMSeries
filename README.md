@@ -7,23 +7,22 @@ Cucumber BDD project
 ## Features overview
 
 *   [x] **AccountPage** User logged we need to verify some web elements on account page
-*   [x] **ContactUs** Filling contact us form 
+*   [x] **ContactUs** Filling contact us form from static excelsheet
 *   [x] **LoginPage** Login to application
 
 ## Project Structure
 .
-├── .idea                   # IntelliJ’s project specific settings 
-├── src                     # Source files
-│   ├── main                # Main java classes
-│   ├── test                # Test classes
-├── target                  # Build folder
-├── test-output             # Reporting Spark tool
-├── test-output-thread      # MultiThread report folder (parallel)
 ├── .gitignore
-├── pom.xml
+├── pom.xml                 #Dependencies and modules
 ├── README.md
-└── serenity.properties     # Serenity plugin properties file
-
+├── serenity.properties     # Serenity plugin properties file
+└───src                     # Project artifacts
+    ├───main                # Source code and resources
+    │   ├───java            # Java source code for the artifact
+    └───test                # Tests of each component
+        ├───java            # Java source code for tests
+        └───resoaurces      # Configuration files
+        
 ## License
 (http://automationpractice.com/)
 
