@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-public class ContactPageSD {
+public class ContactSD {
 
     public ContactUsPage contactUsPage = new ContactUsPage(DriverFactory.getDriver());
 

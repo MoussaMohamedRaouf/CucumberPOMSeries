@@ -11,7 +11,7 @@ import org.junit.Assert;
 import java.util.List;
 import java.util.Map;
 
-public class AccountPageSD {
+public class AccountSD {
     private LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
     private AccountPage accountPage;
 
