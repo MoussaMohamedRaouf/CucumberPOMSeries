@@ -27,7 +27,7 @@ public class ContactPageSD {
         ExcelReader reader = new ExcelReader();
         List<Map<String,String>> testData = null;
         try {
-            testData = reader.getData("/Users/moussa/Downloads/CucumberPOMSeries/src/test/resources/automation.xlsx",sheetName);
+            testData = reader.getData("/Users/moussa/IdeaProjects/CucumberPOMSeries/src/test/resources/automation.xlsx",sheetName);
         } catch (InvalidFormatException e) {
             throw new RuntimeException(e);
         } catch (IOException e) {
