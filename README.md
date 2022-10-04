@@ -11,6 +11,7 @@ Cucumber BDD project
 *   [x] **LoginPage** Login to application
 
 ## Project Structure
+```
 .
 ├── .gitignore
 ├── pom.xml                 #Dependencies and modules
@@ -22,6 +23,7 @@ Cucumber BDD project
     └───test                # Tests of each component
         ├───java            # Java source code for tests
         └───resoaurces      # Configuration files
+```
         
 ## License
 (http://automationpractice.com/)
