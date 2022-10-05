@@ -1,6 +1,7 @@
 package stepsdefinition;
 
 import com.pages.AccountPage;
+import com.pages.HomePage;
 import com.pages.LoginPage;
 import com.qa.factory.DriverFactory;
 import io.cucumber.datatable.DataTable;
@@ -13,16 +14,16 @@ import java.util.Map;
 
 public class AccountSD {
     private LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
+    private HomePage homePage;
     private AccountPage accountPage;
-
     @Given("user has already logged in to application")
     public void user_has_already_logged_in_to_application(DataTable credentialTable) {
         List<Map<String, String>> list = credentialTable.asMaps();
         String userName = list.get(0).get("username");
         String password = list.get(0).get("password");
         System.out.println(userName+" and "+password);
+        homePage = loginPage.login(userName, password);
         DriverFactory.getDriver().get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
-        accountPage = loginPage.login(userName, password);
     }
 
     @Given("user is on Accounts page")

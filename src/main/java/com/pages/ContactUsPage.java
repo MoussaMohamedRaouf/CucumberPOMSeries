@@ -30,7 +30,7 @@ public class ContactUsPage {
     public void clickSend() {
         driver.findElement(sendButton).click();
     }
-    public String getSuccessMessg() {
+    public String getSuccessMessge() {
         return driver.findElement(successMessg).getText();
     }
 

@@ -2,24 +2,34 @@ package com.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public class HomePage {
+    private By signInButton = By.xpath("//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a");
+    private By womenButton = By.xpath("//*[@id=\"block_top_menu\"]/ul/li[1]/a");
+    private By tShirtButton = By.xpath("//*[@id=\"block_top_menu\"]/ul/li[1]/ul/li[1]/ul/li[1]/a");
 
-    private By searchInput = By.id("search_query_top");
-    private By searchButton = By.className("btn btn-default button-search");
     private WebDriver driver;
-
     public HomePage(WebDriver driver) {
-        this.driver = driver;
+        this.driver=driver;
     }
-    public String  getTitle(){
+
+    public String getTitle(){
         return driver.getTitle();
     }
-    public void enterSearch(String text){
-        driver.findElement(searchInput).sendKeys(text);
+    public LoginPage clickOnSignInButton() {
+        driver.findElement(signInButton).click();
+        return new LoginPage(driver);
     }
-    public SearchPage clickSearch(){
-        driver.findElement(searchButton).click();
-        return new SearchPage(driver);
+    public void Hover_Over_Women_Button() {
+        Actions actions = new Actions(driver);
+        WebElement womenButtonWE = driver.findElement(womenButton);
+        actions.moveToElement(womenButtonWE).perform();
+    }
+
+    public TShirtsPage clickTShirtButton() {
+        driver.findElement(tShirtButton).click();
+        return new TShirtsPage(driver);
     }
 }

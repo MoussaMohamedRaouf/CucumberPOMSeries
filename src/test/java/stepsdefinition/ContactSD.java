@@ -48,7 +48,7 @@ public class ContactSD {
 
     @Then("it shows success message {string}")
     public void it_shows_success_message(String expectedSuccessMessage) {
-        String resultSucessMessage = contactUsPage.getSuccessMessg();
+        String resultSucessMessage = contactUsPage.getSuccessMessge();
         Assert.assertEquals(resultSucessMessage,expectedSuccessMessage);
     }
 }
