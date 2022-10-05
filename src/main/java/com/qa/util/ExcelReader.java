@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class ExcelReader {
 
-    public List<Map<String, String>> getData(String excelFilePath, String sheetName)
+    public List<Map<String, String>>getData(String excelFilePath, String sheetName)
             throws InvalidFormatException, IOException {
         Sheet sheet = getSheetByName(excelFilePath, sheetName);
         return readSheet(sheet);

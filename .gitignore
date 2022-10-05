@@ -42,3 +42,4 @@ build/
 /test-output/
 /test-output-thread/
 /.idea/
+/src/test/resources/automation.xlsx

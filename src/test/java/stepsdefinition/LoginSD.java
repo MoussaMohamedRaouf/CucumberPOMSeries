@@ -2,10 +2,16 @@ package stepsdefinition;
 
 import com.pages.LoginPage;
 import com.qa.factory.DriverFactory;
+import com.qa.util.ExcelReader;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.junit.Assert;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 
 public class LoginSD {
     private static String title;
@@ -32,10 +38,24 @@ public class LoginSD {
     public void user_enters_username(String email) {
         loginPage.enterEmail(email);
     }
-    @When("user enters password {string}")
-    public void user_enters_password(String password) {
+
+    @When("user enters username {string} and {string}")
+    public void user_enters_username_and(String sheetName, String rowNumber) {
+        ExcelReader reader = new ExcelReader();
+        List<Map<String,String>> testData = null;
+        try {
+            testData = reader.getData("/Users/moussa/IdeaProjects/CucumberPOMSeries/src/test/resources/automation.xlsx",sheetName);
+        } catch (InvalidFormatException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        String username = testData.get(Integer.parseInt(rowNumber)).get("username");
+        String password = testData.get(Integer.parseInt(rowNumber)).get("password");
+        loginPage.enterEmail(username);
         loginPage.enterPassword(password);
-    }
+        }
+
     @When("user clicks on Login button")
     public void user_clicks_on_login_button() {
     loginPage.clickLogin();
