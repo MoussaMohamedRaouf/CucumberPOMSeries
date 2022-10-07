@@ -10,20 +10,15 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 
 import java.util.List;
-import java.util.Map;
 
 public class AccountSD {
     private LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
     private HomePage homePage;
     private AccountPage accountPage;
     @Given("user has already logged in to application")
-    public void user_has_already_logged_in_to_application(DataTable credentialTable) {
-        List<Map<String, String>> list = credentialTable.asMaps();
-        String userName = list.get(0).get("username");
-        String password = list.get(0).get("password");
-        System.out.println(userName+" and "+password);
-        homePage = loginPage.login(userName, password);
+    public void user_has_already_logged_in_to_application() {
         DriverFactory.getDriver().get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
+        accountPage = loginPage.login();
     }
 
     @Given("user is on Accounts page")

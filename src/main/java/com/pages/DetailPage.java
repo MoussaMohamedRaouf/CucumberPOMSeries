@@ -1,5 +1,6 @@
 package com.pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,9 +8,9 @@ import org.openqa.selenium.support.How;
 
 public class DetailPage extends BasePage {
 
-    @FindBy(how = How.XPATH, using = "//i[@class='icon-plus']")
-    WebElement plusButton;
-    @FindBy(how = How.XPATH, using = "//*[@id=\"group_1\"]")
+    private By plusButton = By.xpath("//*[@id=\"quantity_wanted_p\"]/a[2]");
+
+    @FindBy(how = How.ID, using = "//*[@id=\"group_1\"]")
     WebElement dropdown;
     @FindBy(how = How.XPATH, using = "//*[@id=\"color_14\"]")
     WebElement color;
@@ -19,7 +20,7 @@ public class DetailPage extends BasePage {
     }
 
     public void increaseQte() {
-        plusButton.click();
+        driver.findElement(plusButton).click();
     }
 
     public void updateSize(String l) {

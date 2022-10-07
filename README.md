@@ -5,11 +5,14 @@ Cucumber BDD project
 
 
 ## Steps to install project & getting reports
+[Prerequisite]
+Java & Maven should be installed & configured on environment variables
+[Steps]
 1. Download this project from GitHub
 2. Open the project with your favorite IDE
 3. and from your terminal user 'mvn test' to run the project
         -Since we have used SureFire Plugin runner files with names like (**Test.java,**/*TestCase.java,**/*Test.java) gets executed.
-4. Once run finishes you will see appearing 3 new folders under root directory
+4. Once run finishes you will see appearing 3 new folders under root directory containig test reports (Pdf & html files) and you can also access Cucumber reports from the url you will get on the Run console
 
 ```
    .
@@ -52,6 +55,7 @@ cucumber-java = "7.8.0"
 
 
 ## Project Structure
+Here is the project structure:
 ```
 .
 ├── .gitignore
@@ -65,9 +69,6 @@ cucumber-java = "7.8.0"
         ├───java            # Java source code for tests
         └───resoaurces      # Configuration files
 ```
-
-
-
 
 ## License
 (http://automationpractice.com/)

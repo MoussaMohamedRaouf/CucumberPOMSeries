@@ -1,9 +1,6 @@
 package stepsdefinition;
 
-import com.pages.DetailPage;
-import com.pages.HomePage;
-import com.pages.LoginPage;
-import com.pages.TShirtsPage;
+import com.pages.*;
 import com.qa.factory.DriverFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,6 +9,7 @@ import io.cucumber.java.en.When;
 public class BuySD {
     public HomePage homePage = new HomePage(DriverFactory.getDriver());
     public LoginPage loginPage;
+    public AccountPage accountPage;
     public TShirtsPage tshirtPage;
     public DetailPage detailPage;
     @Given("the user is on home page of the website")
@@ -25,12 +23,12 @@ public class BuySD {
         System.out.println("User clicks sign in button");
         loginPage = homePage.clickOnSignInButton();
     }
-    @Then("User enters username {string} and password {string} and click login")
-    public void user_enters_username_and_password_and_click_login(String userName, String password) {
-        System.out.println("User enters username and password");
-        System.out.println("Logging with credentials"+userName+" and "+password);
-        homePage = loginPage.login(userName,password);
+
+    @Then("User enters username and password and click login")
+    public void user_enters_username_and_password_and_click_login() {
+        accountPage = loginPage.login();
     }
+
     @Then("Move your cursor over women's link")
     public void move_your_cursor_over_women_s_link() {
         System.out.println("Move your cursor over women's link");

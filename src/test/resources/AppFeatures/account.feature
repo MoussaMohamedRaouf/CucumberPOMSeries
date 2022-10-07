@@ -1,9 +1,7 @@
 Feature: Account Page Feature
   Background:
     Given user has already logged in to application
-      | username               | password      |
-      | moussaraouf@outlook.fr | Selenium12345 |
-   @accounts
+  @accounts
   Scenario: Accounts page title.
     Given user is on Accounts page
     When user gets the title of the page
