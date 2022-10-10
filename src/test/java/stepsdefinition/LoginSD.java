@@ -9,10 +9,10 @@ import org.junit.Assert;
 
 public class LoginSD {
     private static String title;
-    private LoginPage loginPage= new LoginPage(DriverFactory.getDriver());
+    private final LoginPage loginPage= new LoginPage(DriverFactory.getDriver());
     @Given("user is on login page")
     public void user_is_on_login_page() {
-        DriverFactory.getDriver().get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
+        loginPage.getToLoginURL();
     }
     @When("user gets the title of the page")
     public void user_gets_the_title_of_the_page() {

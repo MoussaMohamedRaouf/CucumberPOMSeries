@@ -1,7 +1,6 @@
 package stepsdefinition;
 
 import com.pages.AccountPage;
-import com.pages.HomePage;
 import com.pages.LoginPage;
 import com.qa.factory.DriverFactory;
 import io.cucumber.datatable.DataTable;
@@ -12,12 +11,11 @@ import org.junit.Assert;
 import java.util.List;
 
 public class AccountSD {
-    private LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
-    private HomePage homePage;
+    private final LoginPage loginPage = new LoginPage(DriverFactory.getDriver());
     private AccountPage accountPage;
     @Given("user has already logged in to application")
     public void user_has_already_logged_in_to_application() {
-        DriverFactory.getDriver().get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
+        loginPage.getToLoginURL();
         accountPage = loginPage.login();
     }
 
@@ -39,7 +37,8 @@ public class AccountSD {
     @Then("accounts section count should be {int}")
     public void accounts_section_count_should_be(Integer expectedCount) {
         System.out.println("Actual count : "+accountPage.getAccountSections()+"expected count :"+expectedCount);
-        Assert.assertTrue(accountPage.getAccountSections()==expectedCount);
+        Integer list = accountPage.getAccountsSectionList().size();
+        Assert.assertEquals(expectedCount,list);
 
     }
 }

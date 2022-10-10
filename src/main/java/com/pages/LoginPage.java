@@ -1,5 +1,6 @@
 package com.pages;
 
+import com.qa.factory.DriverFactory;
 import com.qa.util.ConfigReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,24 +9,25 @@ import java.util.Properties;
 
 public class LoginPage {
     Properties prop;
-    private ConfigReader configReader;
 
-    private WebDriver driver;
-    private By emailID = By.id("email");
-    private By passwordID = By.id("passwd");
-    private By submitButtonID = By.id("SubmitLogin");
-    private By forgotPasswordLT = By.linkText("Forgot your password?");
+    private final WebDriver driver;
+    private final By emailID = By.id("email");
+    private final By passwordID = By.id("passwd");
+    private final By submitButtonID = By.id("SubmitLogin");
+    private final By forgotPasswordLT = By.linkText("Forgot your password?");
 private String password;
+private String loginUrl;
 private String username;
     public LoginPage(WebDriver driver) {
         this.driver = driver;
         initProperties();
     }
     public void initProperties(){
-        configReader = new ConfigReader();
+        ConfigReader configReader = new ConfigReader();
         prop = configReader.initProp();
         password = prop.getProperty("password");
         username = prop.getProperty("username");
+        loginUrl = prop.getProperty("loginUrl");
     }
     /**
      * Page actions and it should be public in nature
@@ -52,4 +54,9 @@ private String username;
         driver.findElement(submitButtonID).click();
         return new AccountPage(driver);
     }
+
+    public void getToLoginURL() {
+        DriverFactory.getDriver().get(loginUrl);
+    }
+
 }
