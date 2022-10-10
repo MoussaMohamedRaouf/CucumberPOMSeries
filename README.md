@@ -1,12 +1,9 @@
 # CUCUMBER POM SERIES
 
 ## Intro
-Cucumber BDD project
-
-
-## Steps to install project & getting reports
 [Prerequisite]
 Java & Maven should be installed & configured on environment variables
+
 [Steps]
 1. Download this project from GitHub
 2. Open the project with your favorite IDE
@@ -21,13 +18,15 @@ Java & Maven should be installed & configured on environment variables
    └── test output-thread           #This folder contains reports informations to visulize on browser
 ```
 
-[dependencies]
+[Dependencies]
+```
 Java = Java SE 8
 Selenium = 4.0.0-beta-4
 junit = "4.13.2"
 lombok = "1.8.24"
 serenity = "3.3.4"
 cucumber-java = "7.8.0"
+```
 
 ## Features overview
 *   [x] **Account** User logged we need to verify some web elements on account page
@@ -50,7 +49,7 @@ cucumber-java = "7.8.0"
     Steps: 
     - Sign In operation
     - Access the Women's T-shirt section
-    - get to a product addit to cart
+    - get to a product add it to cart
     - Make order steps
 
 
