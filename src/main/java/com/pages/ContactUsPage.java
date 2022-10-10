@@ -1,14 +1,13 @@
 package com.pages;
 
-import com.qa.factory.DriverFactory;
-import com.qa.util.ConfigReader;
-import com.qa.util.ExcelReader;
+import com.resources.factory.DriverFactory;
+import com.resources.util.ConfigReader;
+import com.resources.util.ExcelReader;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -53,15 +52,13 @@ public class ContactUsPage {
         DriverFactory.getDriver().get(contactUrl);
     }
 
-    public List<Map<String, String>> getMaps(String sheetName) throws InvalidFormatException,IOException{
+    public List<Map<String, String>> getMaps(String sheetName) throws InvalidFormatException{
             ExcelReader reader = new ExcelReader();
             List<Map<String,String>> testData;
             try {
                 testData = reader.getData(excelFilePath, sheetName);
-            } catch (InvalidFormatException e) {
+            } catch (Exception e) {
                 throw new InvalidFormatException("Runtime Exception occured"+e.getMessage());
-            }catch (IOException e) {
-                throw new IOException("Runtime Exception occured"+e.getMessage());
             }
             return testData;
     }

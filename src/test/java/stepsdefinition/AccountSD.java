@@ -2,7 +2,7 @@ package stepsdefinition;
 
 import com.pages.AccountPage;
 import com.pages.LoginPage;
-import com.qa.factory.DriverFactory;
+import com.resources.factory.DriverFactory;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

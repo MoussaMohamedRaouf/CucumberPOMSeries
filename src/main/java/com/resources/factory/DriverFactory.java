@@ -1,4 +1,4 @@
-package com.qa.factory;
+package com.resources.factory;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -17,18 +17,22 @@ public class DriverFactory {
      * @return
      */
     public WebDriver initDriver(String browser){
-        System.out.println("Browser value is:"+browser);
-        if (browser.equals("chrome")) {
-            WebDriverManager.chromedriver().setup();
-            tlDriver.set(new ChromeDriver());
-        }else if(browser.equals("firefox")){
-            WebDriverManager.firefoxdriver().setup();
-            tlDriver.set(new FirefoxDriver());
-        }else if(browser.equals("safari")){
-            WebDriverManager.safaridriver().setup();
-            tlDriver.set(new SafariDriver());
-        }else {
-            System.out.println("Please pass the correct browser value:" +browser);
+        switch (browser) {
+            case "chrome":
+                WebDriverManager.chromedriver().setup();
+                tlDriver.set(new ChromeDriver());
+                break;
+            case "firefox":
+                WebDriverManager.firefoxdriver().setup();
+                tlDriver.set(new FirefoxDriver());
+                break;
+            case "safari":
+                WebDriverManager.safaridriver().setup();
+                tlDriver.set(new SafariDriver());
+                break;
+            default:
+                System.out.println("Please pass the correct browser value:" + browser);
+                break;
         }
         getDriver().manage().deleteAllCookies();
         getDriver().manage().window().maximize();

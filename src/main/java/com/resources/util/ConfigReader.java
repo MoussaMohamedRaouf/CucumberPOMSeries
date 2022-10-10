@@ -1,5 +1,6 @@
-package com.qa.util;
+package com.resources.util;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -12,7 +13,7 @@ public class ConfigReader {
      * This method is used to load the properties from config.properties file
      * @return properties object prop
      */
-    public Properties initProp(){
+    public Properties initProp() {
         prop = new Properties();
         try {
             FileInputStream ip = new FileInputStream("./src/test/resources/config/config.properties");

@@ -1,13 +1,13 @@
 package com.pages;
 
-import com.qa.factory.DriverFactory;
-import com.qa.util.ConfigReader;
+import com.resources.factory.DriverFactory;
+import com.resources.util.ConfigReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import java.util.Properties;
 
-public class LoginPage {
+public class LoginPage  {
     Properties prop;
 
     private final WebDriver driver;

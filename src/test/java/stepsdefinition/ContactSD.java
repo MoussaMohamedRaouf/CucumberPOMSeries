@@ -1,7 +1,7 @@
 package stepsdefinition;
 
 import com.pages.ContactUsPage;
-import com.qa.factory.DriverFactory;
+import com.resources.factory.DriverFactory;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
