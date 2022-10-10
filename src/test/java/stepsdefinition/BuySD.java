@@ -58,11 +58,11 @@ public class BuySD {
     }
     @Then("Click add to cart")
     public void click_add_to_cart() {
-        System.out.println("Click add to cart");
+    detailPage.clickAddButton();
     }
     @Then("Click procees to checkout")
     public void click_procees_to_checkout() {
-        System.out.println("Click procees to checkout");
+        detailPage.clickProcedButton();
     }
     @Then("Complete the buy order process till payment")
     public void complete_the_buy_order_process_till_payment() {

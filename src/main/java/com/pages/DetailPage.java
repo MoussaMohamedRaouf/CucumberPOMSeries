@@ -2,19 +2,17 @@ package com.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 
 public class DetailPage extends BasePage {
 
-    private By plusButton = By.xpath("//*[@id=\"quantity_wanted_p\"]/a[2]");
+    private final By plusButton = By.id("quantity_wanted_p");
+    private final By dropDown = By.id("group_1");
+    private final By color = By.id("color_14");
+    private final By proceedButton = By.linkText("Proceed to checkout");
+    private final By addButton = By.className("exclusive added");
+    private final By layerCart = By.id("layer_cart");
 
-    @FindBy(how = How.ID, using = "//*[@id=\"group_1\"]")
-    WebElement dropdown;
-    @FindBy(how = How.XPATH, using = "//*[@id=\"color_14\"]")
-    WebElement color;
-    private WebDriver driver;
+    private final WebDriver driver;
     public DetailPage(WebDriver driver) {
         this.driver=driver;
     }
@@ -23,11 +21,18 @@ public class DetailPage extends BasePage {
         driver.findElement(plusButton).click();
     }
 
-    public void updateSize(String l) {
-        selectFromDropdownByVisibleText(dropdown,l);
+    public void updateSize(String size) {
+        selectFromDropdownByVisibleText(driver.findElement(dropDown),size);
     }
 
     public void updateColor() {
-        color.click();
+        driver.findElement(color).click();
+    }
+    public void clickAddButton() {
+        driver.findElement(addButton).click();
+    }
+
+    public void clickProcedButton() {
+        driver.findElement(proceedButton).click();
     }
 }
