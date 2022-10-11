@@ -6,9 +6,7 @@ import com.resources.util.Log;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.junit.Assume;
+import org.junit.Ignore;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -19,13 +17,11 @@ public class ApplicationHooks {
 
     private WebDriver driver;
     Properties prop;
-    private final Logger LOG = LogManager.getLogger(ApplicationHooks.class);
-
 
     @Before(value="@Skip", order = 0)
+    @Ignore("Ticket")
     public void skip_scenario(Scenario scenario){
         System.out.println("SKIP SCENARIO: " + scenario.getName());
-        Assume.assumeTrue(false);
     }
     @Before(order = 1)
     public void getProperty(){
