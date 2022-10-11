@@ -42,3 +42,4 @@ build/
 /test-output/
 /test-output-thread/
 /.idea/
+/logs/
